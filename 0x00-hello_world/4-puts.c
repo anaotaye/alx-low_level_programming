@@ -1,8 +1,11 @@
 #include<stdio.h>
-// main function starts here
+/**
+ * main - main function starts here
+ * puts - print a line of text
+ * return -return 0
+*/
 int main(void) 
 {
-// Print a line of text
 puts ("\"Programming is like building a multilingual puzzle");
 return(0);
 }
