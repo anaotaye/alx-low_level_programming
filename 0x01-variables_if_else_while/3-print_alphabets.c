@@ -8,18 +8,18 @@
 int main(void)
 
 {
-	char low_alpha = 'a';
-	char high_alpha = 'A';
+	char low_case = 'a';
+	char upper_case = 'A';
 
-	while (low_alpha <= 'z')
+	while (low_case <= 'z')
 	{
-		putchar(low_alpha);
-		low_alpha++;
+		putchar(low_case);
+		low_case++;
 	}
-	while (high_alpha <= 'Z')
+	while (upper_case <= 'Z')
 	{
-		putchar(high_alpha);
-		high_alpha++;
+		putchar(upper_case);
+		upper_case++;
 	}
 	putchar('\n');
 
