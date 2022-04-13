@@ -12,7 +12,7 @@
 
 int _isalpha(int c)
 {
-	char c;
+	int c;
 
 	if (isalpha(c) != 0)
 		return (1);
