@@ -6,11 +6,13 @@
 /**
  * _abs - function to return the absolute value of a number
  *
+ *@n: integer to be checked
+ *
  * Return: 0 (success)
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	return (abs(int));
+	return (abs(n));
 	return (0);
 }
