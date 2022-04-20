@@ -11,5 +11,5 @@
 void _puts(char *str)
 {
 	fputs(str, stdout);
-	fputs('\n', stdout);
+	fputs("\n", stdout);
 }
