@@ -10,6 +10,6 @@
 
 void _puts(char *str)
 {
-	puts(str, stdout);
-	_putchar('\n', stdout);
+	fputs(str, stdout);
+	fputs('\n', stdout);
 }
