@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -11,7 +10,6 @@
 
 void _puts(char *str)
 {
-	gets(str);
-	puts(str);
-	_putchar('\n');
+	puts(str, stdout);
+	_putchar('\n', stdout);
 }
