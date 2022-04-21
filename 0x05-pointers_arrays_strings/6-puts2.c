@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * puts2 - prints every other characters, starting with the first
@@ -12,7 +11,7 @@ void puts2(char *str)
 {
 	char *string;
 
-	for (string = str; string != NULL; string += 2)
+	for (*string = str; *string != '\0'; *string += 2)
 		_putchar(*string);
 
 	_putchar('\n');
