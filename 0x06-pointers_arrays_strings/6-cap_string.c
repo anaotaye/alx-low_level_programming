@@ -13,6 +13,7 @@ char *cap_string(char *str)
 {
 	int i, length;
 	int symbols[] =  {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
 	length = strlen(str);
 
 	for (i = 0; i < length; i++)
