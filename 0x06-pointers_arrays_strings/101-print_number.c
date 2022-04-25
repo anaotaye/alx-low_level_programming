@@ -7,7 +7,7 @@
  * Return: nothing to return
  */
 
-void print_number(int n);
+void print_number(int n)
 {
 	unsigned int i = n;
 
