@@ -11,7 +11,7 @@ char *cap_string(char *str)
 {
 	int i, j;
 	int i = 0;
-	int symbols[] =  {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	char symbols[] =  {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	while (str[i] != '\0')
 	{
@@ -21,7 +21,7 @@ char *cap_string(char *str)
 		}
 		j = 0;
 
-		while (symbols[j] != '/0')
+		while (symbols[j] != '\0')
 		{
 			if (symbols[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
 			{
