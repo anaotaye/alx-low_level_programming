@@ -4,13 +4,13 @@
  * cap_string - function to capitalize all words of a string
  * @str: string to work on
  *
- * Return: returns string
+ * Return: returns pointer to string
  */
 
 char *cap_string(char *str)
 {
 	int i, j;
-	char symbols[] = " \t\n,;.!?\"(){}";
+	char symbols[] = {" \t\n,;.!?\"(){}"};
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
