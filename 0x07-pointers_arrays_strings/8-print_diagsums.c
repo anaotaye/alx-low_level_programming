@@ -10,17 +10,15 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	int sum = 0;
+	int i;
+	int sum1 = 0, sum2;
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			sum += a[i][j];
-			_putchar(sum);
-			if (j == (size - 1))
-				_putchar('\n');
-		}
+		sum1 += a[i];
+		sum2 += a[size - i - 1];
+		a += size;
 	}
+	_putchar(sum1);
+	_putchar(sum2);
 }
