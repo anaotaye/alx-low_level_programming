@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt: helper function to _sqrt_recursion
+ * _sqrt - helper function to _sqrt_recursion
  * @i: counter
  * @n: number
  *
