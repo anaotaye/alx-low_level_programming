@@ -7,11 +7,11 @@
  * Return: returns the factorial number
  */
 
-int fatorial(int n)
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
 	if (n == 0)
 		return (1);
-	return (n * factorial (n));
+	return (n * factorial(n));
 }
