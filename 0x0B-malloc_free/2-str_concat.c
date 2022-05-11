@@ -21,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 			size1++;
 	}
 	else
-		s1 = " ";
+		s1 = "";
 
 	ptr = s2;
 
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 			size2++;
 	}
 	else
-		s2 = " ";
+		s2 = "";
 
 	ret = malloc(size1 + size2 + 1);
 
