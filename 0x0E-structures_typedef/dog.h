@@ -2,7 +2,7 @@
 #define _DOG_H_
 
 /**
- * struct Dog - contains information about a dog
+ * struct dog - contains information about a dog
  * @name: pointer to name of dogg
  * @age: age of dog
  * @owner: pointer to owner of dog
