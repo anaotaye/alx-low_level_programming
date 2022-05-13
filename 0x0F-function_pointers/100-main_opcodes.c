@@ -11,8 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	char *oc = (char *) main;
-	int nbytes, i;
+	int i;
 
 	if (argc != 2)
 	{
@@ -20,21 +19,15 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	nbytes = atoi(argv[1]);
-
-	if (nbytes < 0)
+	if (atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (i = 0; i < nbytes; i++)
-	{
-		printf("%02x", oc[i] & 0xFF);
-		if (i != nbytes - 1)
-			printf(" ");
-	}
+	for (i = 0; i < atoi(argv[1]) - 1; i++)
+		printf("%02hhx", ((char *)main)[i]);
 
-	printf("/n");
+	printf("%02hhx\n", ((char *)main)[i]);
 	return (0);
 }
