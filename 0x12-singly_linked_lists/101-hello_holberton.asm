@@ -1,3 +1,7 @@
+section.data:
+	msg: db "Hello, Holberton", 0
+	len: db "%s", 10, 0
+
 section.text:
 	extern printf
 	global main
@@ -10,7 +14,3 @@ main:
 
 	mov eax, 0
 	ret
-
-section .data:
-	msg db "Hello, Holberton", 0xa
-	len db "%s", 10, 0
